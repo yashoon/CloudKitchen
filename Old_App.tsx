@@ -17,7 +17,7 @@ export default function App(): JSX.Element {
     if (username === "admin" && password === "1234") {
       Alert.alert("Login Successful 🎉", `Welcome ${username}!`);
     } else {
-      Alert.alert("Login Failed ❌", "Invalid username or password");
+      Alert.alert("Login Failed !!!", "Invalid username or password");
     }
   };
 
