@@ -29,10 +29,23 @@ export default function TabsLayout() {
   }
 
   return (
-    <Tabs>
-            <Tabs.Screen 
+    <Tabs
+      screenOptions={{
+      headerShown: true,
+      tabBarActiveTintColor: '#007AFF',
+    }}
+    >
+      <Tabs.Screen 
         name="home" 
-        options={{ title: 'Home' }} 
+        options={{ title: 'Dashboard' }} 
+      />
+      <Tabs.Screen 
+        name="orders" 
+        options={{ title: 'Orders' }} 
+      />
+      <Tabs.Screen 
+        name="menus" 
+        options={{ title: 'Menus' }} 
       />
       <Tabs.Screen 
         name="profile" 
